@@ -1,0 +1,2 @@
+# lottery
+go sign tonight
