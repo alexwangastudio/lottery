@@ -48,9 +48,9 @@
   }
 
   function draw() {
-    const main = pickUnique(46, 6);       // 六個主號碼（1..46，不重複）
+    const main = pickUnique(49, 6);       // 六個主號碼（1..46，不重複）
     main.sort((a,b)=>a-b);                // 依習慣排序
-    const bonus = pickUnique(46, 1, new Set(main))[0]; // Bonus 不與主號碼重複
+    const bonus = pickUnique(49, 1, new Set(main))[0]; // Bonus 不與主號碼重複
 
     for (let i=0;i<6;i++) {
       document.getElementById(`m${i+1}`).textContent = main[i];
